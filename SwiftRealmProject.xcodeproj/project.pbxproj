@@ -11,6 +11,16 @@
 		BB4977B02AA0C92A005958A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977AF2AA0C92A005958A8 /* ContentView.swift */; };
 		BB4977B22AA0C92B005958A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4977B12AA0C92B005958A8 /* Assets.xcassets */; };
 		BB4977B52AA0C92B005958A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4977B42AA0C92B005958A8 /* Preview Assets.xcassets */; };
+		BB4977BD2AA0CA19005958A8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BB4977BC2AA0CA19005958A8 /* Realm */; };
+		BB4977BF2AA0CA19005958A8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BB4977BE2AA0CA19005958A8 /* RealmSwift */; };
+		BB4977C22AA0CCE9005958A8 /* AddShoppingListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977C12AA0CCE9005958A8 /* AddShoppingListScreen.swift */; };
+		BB4977C52AA0CE9E005958A8 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977C42AA0CE9E005958A8 /* ShoppingList.swift */; };
+		BB4977C72AA0D901005958A8 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977C62AA0D901005958A8 /* ShoppingItem.swift */; };
+		BB4977CA2AA0DB9A005958A8 /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977C92AA0DB9A005958A8 /* Migrator.swift */; };
+		BB4977CC2AA0DEFC005958A8 /* ShoppingListItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977CB2AA0DEFC005958A8 /* ShoppingListItemScreen.swift */; };
+		BB4977CE2AA2FEAB005958A8 /* AddShoppingListItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977CD2AA2FEAB005958A8 /* AddShoppingListItemScreen.swift */; };
+		BB4977D12AA30A78005958A8 /* ShoppingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977D02AA30A78005958A8 /* ShoppingItemCell.swift */; };
+		BB4977D32AA31292005958A8 /* CategoryFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4977D22AA31292005958A8 /* CategoryFilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,14 @@
 		BB4977AF2AA0C92A005958A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB4977B12AA0C92B005958A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB4977B42AA0C92B005958A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB4977C12AA0CCE9005958A8 /* AddShoppingListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShoppingListScreen.swift; sourceTree = "<group>"; };
+		BB4977C42AA0CE9E005958A8 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		BB4977C62AA0D901005958A8 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		BB4977C92AA0DB9A005958A8 /* Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
+		BB4977CB2AA0DEFC005958A8 /* ShoppingListItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemScreen.swift; sourceTree = "<group>"; };
+		BB4977CD2AA2FEAB005958A8 /* AddShoppingListItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShoppingListItemScreen.swift; sourceTree = "<group>"; };
+		BB4977D02AA30A78005958A8 /* ShoppingItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemCell.swift; sourceTree = "<group>"; };
+		BB4977D22AA31292005958A8 /* CategoryFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4977BF2AA0CA19005958A8 /* RealmSwift in Frameworks */,
+				BB4977BD2AA0CA19005958A8 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +71,10 @@
 		BB4977AC2AA0C92A005958A8 /* SwiftRealmProject */ = {
 			isa = PBXGroup;
 			children = (
+				BB4977CF2AA30A5B005958A8 /* Views */,
+				BB4977C82AA0DB88005958A8 /* Utils */,
+				BB4977C32AA0CE85005958A8 /* Models */,
+				BB4977C02AA0CCC7005958A8 /* Screens */,
 				BB4977AD2AA0C92A005958A8 /* SwiftRealmProjectApp.swift */,
 				BB4977AF2AA0C92A005958A8 /* ContentView.swift */,
 				BB4977B12AA0C92B005958A8 /* Assets.xcassets */,
@@ -65,6 +89,42 @@
 				BB4977B42AA0C92B005958A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB4977C02AA0CCC7005958A8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BB4977C12AA0CCE9005958A8 /* AddShoppingListScreen.swift */,
+				BB4977CB2AA0DEFC005958A8 /* ShoppingListItemScreen.swift */,
+				BB4977CD2AA2FEAB005958A8 /* AddShoppingListItemScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BB4977C32AA0CE85005958A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB4977C42AA0CE9E005958A8 /* ShoppingList.swift */,
+				BB4977C62AA0D901005958A8 /* ShoppingItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB4977C82AA0DB88005958A8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB4977C92AA0DB9A005958A8 /* Migrator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB4977CF2AA30A5B005958A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB4977D02AA30A78005958A8 /* ShoppingItemCell.swift */,
+				BB4977D22AA31292005958A8 /* CategoryFilterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +143,10 @@
 			dependencies = (
 			);
 			name = SwiftRealmProject;
+			packageProductDependencies = (
+				BB4977BC2AA0CA19005958A8 /* Realm */,
+				BB4977BE2AA0CA19005958A8 /* RealmSwift */,
+			);
 			productName = SwiftRealmProject;
 			productReference = BB4977AA2AA0C92A005958A8 /* SwiftRealmProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +175,9 @@
 				Base,
 			);
 			mainGroup = BB4977A12AA0C92A005958A8;
+			packageReferences = (
+				BB4977BB2AA0CA19005958A8 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = BB4977AB2AA0C92A005958A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +204,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4977D12AA30A78005958A8 /* ShoppingItemCell.swift in Sources */,
 				BB4977B02AA0C92A005958A8 /* ContentView.swift in Sources */,
+				BB4977D32AA31292005958A8 /* CategoryFilterView.swift in Sources */,
+				BB4977CC2AA0DEFC005958A8 /* ShoppingListItemScreen.swift in Sources */,
+				BB4977C52AA0CE9E005958A8 /* ShoppingList.swift in Sources */,
+				BB4977CA2AA0DB9A005958A8 /* Migrator.swift in Sources */,
 				BB4977AE2AA0C92A005958A8 /* SwiftRealmProjectApp.swift in Sources */,
+				BB4977C72AA0D901005958A8 /* ShoppingItem.swift in Sources */,
+				BB4977CE2AA2FEAB005958A8 /* AddShoppingListItemScreen.swift in Sources */,
+				BB4977C22AA0CCE9005958A8 /* AddShoppingListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +414,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB4977BB2AA0CA19005958A8 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB4977BC2AA0CA19005958A8 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB4977BB2AA0CA19005958A8 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		BB4977BE2AA0CA19005958A8 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB4977BB2AA0CA19005958A8 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB4977A22AA0C92A005958A8 /* Project object */;
 }
